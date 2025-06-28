@@ -4,7 +4,7 @@ public class PalindromeChecker {
     private PalindromeChecker() {}
 
     public static boolean check(final String str) {
-        if (str == null) return false;
+        if (str == null || str.isEmpty()) return false;
         final var normalized = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
         int left = 0;
         int right = normalized.length() - 1;

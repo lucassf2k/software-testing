@@ -14,10 +14,4 @@ public class Fibonacci {
         }
         return b;
     }
-
-    public static void main(String[] args) {
-        int n = 10;
-        final var output = Fibonacci.calculate(47);
-        System.out.println("O " + n + "-ésimo número de Fibonacci é: " + output);
-    }
 }
